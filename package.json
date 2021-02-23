@@ -1,0 +1,33 @@
+{
+  "name": "@softwareplumber/immutable-set",
+  "version": "0.0.0",
+  "description": "typescript immutable set",
+  "main": "dist/index.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://projects.softwareplumbers.com/common-javascript/immutable-set.git"
+  },
+  "keywords": [
+    "typescript",
+    "set",
+    "immutable"
+  ],
+  "author": "Jonathan  Essex",
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.5"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.softwareplumbers.com/repository/npm-oss/"
+  }  
+}
