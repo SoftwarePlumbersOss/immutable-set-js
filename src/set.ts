@@ -25,8 +25,8 @@ export class ImmutableSet<T> implements IImmutableSet<T> {
             this._impl = new Set(_impl);
     }
 
-    add(element : T) : IImmutableSet<T> {  
-        return new ImmutableSet(this._impl.add(element));
+    add(element : T) : IImmutableSet<T> { 
+        return new ImmutableSet(new TemporarySet(this._impl, element));
     }
 
     has(element : T) : boolean { return this.native().has(element); }

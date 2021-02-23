@@ -14,3 +14,11 @@ describe('immutable set has read operations similar to core Set', ()=> {
         expect([...immutableSet]).toEqual([...set]);
     })
 });
+
+describe('immutable set is really immutable', () => {
+    test('adding to a fresh set does not actually add anything', () => {
+        let set = new ImmutableSet(['a', 'b', 'c']);
+        set.add('d');
+        expect(set.has('d')).toBe(false);
+    });
+})
