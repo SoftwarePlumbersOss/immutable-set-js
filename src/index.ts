@@ -1,4 +1,4 @@
-import { ImmutableSet, MutableSet, IImmutableSet } from './set';
-export { ImmutableSet, MutableSet, IImmutableSet };
+import { ImmutableSet, IImmutableSet } from './set';
+export { ImmutableSet, IImmutableSet };
 export default ImmutableSet;
 
