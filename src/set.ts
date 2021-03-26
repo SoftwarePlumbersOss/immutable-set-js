@@ -37,12 +37,6 @@ export class ImmutableSet<T> implements IImmutableSet<T> {
     forEach(apply : (t : T) => void) : void { this._impl.forEach(apply); }
 }
 
-export class MutableSet<T> extends Set<T> implements IImmutableSet<T> {
-
-}
-
-
-
 class TemporarySet<T> implements IImmutableSet<T> {
     private _parent : IImmutableSet<T> | Set<T>
     private _element : T
